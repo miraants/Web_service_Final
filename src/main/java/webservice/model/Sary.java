@@ -14,7 +14,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Entity
 public class Sary {
     @Id
-
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id_sary;
 
 
