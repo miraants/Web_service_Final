@@ -18,4 +18,6 @@ public interface Liste_EnchereRepository extends JpaRepository<Liste_Enchere, In
     @Query(value = "select * from v_liste_enchere where nom_produit=:nom_produit",nativeQuery = true)
     public Liste_Enchere selectEnchere(@Param("nom_produit") String nom_produit);
 
+     @Query(value = "select * from v_liste_enchere where statut=0",nativeQuery = true)
+    public List<Liste_Enchere> findListe_Enchere();
 }

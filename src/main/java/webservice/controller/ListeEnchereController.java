@@ -59,6 +59,11 @@ public class ListeEnchereController {
     public ResponseEntity selectEnchere(@PathVariable("nom") String nom_produit){
         return ResponseEntity.ok(listeEnchere.selectEnchere(nom_produit));
     }
+     @GetMapping("select")
+    public ResponseEntity<List<Liste_Enchere>> list(){
+        return ResponseEntity.ok(listeEnchere.findListe_Enchere());
+    }
+    
 
 
 }
