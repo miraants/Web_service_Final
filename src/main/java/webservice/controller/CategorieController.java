@@ -14,7 +14,7 @@ import webservice.repository.CategorieRepository;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins= "*", methods = RequestMethod.GET  ,maxAge = 3600)
+@CrossOrigin(origins= "*", methods = RequestMethod.POST,maxAge = 3600)
 @RequestMapping("/api/v1/categorie")
 public class CategorieController {
     @Autowired
